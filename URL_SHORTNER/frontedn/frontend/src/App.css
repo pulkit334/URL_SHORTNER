@@ -1,0 +1,210 @@
+/* 🌟 PulseLink - Enhanced Frontend Theme (App.css) */
+
+/* ===== Reset & Base ===== */
+body {
+  margin: 0;
+  background-color: #f9fafb;
+  color: #111827;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #111827;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+input {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 14px;
+  width: 60%;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input:focus {
+  border-color: #2563eb;
+}
+
+/* ===== Header ===== */
+header {
+  background: #1f2937;
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+header nav a {
+  margin-left: 20px;
+  font-weight: 500;
+  color: #e5e7eb;
+}
+
+header nav a:hover {
+  color: #93c5fd;
+}
+
+/* ===== Home Section ===== */
+main {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+main p {
+  color: #4b5563;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== Shorten Box ===== */
+.shorten-box {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+/* ===== Card / Popup ===== */
+.popup-card {
+  display: inline-block;
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 1rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.popup-card a {
+  color: #2563eb;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.popup-card button {
+  margin-right: 8px;
+}
+
+/* ===== Dashboard Table ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+th {
+  background: #f9fafb;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #374151;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #111827;
+  color: #d1d5db;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: #60a5fa;
+  margin: 0 0.5rem;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #93c5fd;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeInUp {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  input {
+    width: 90%;
+  }
+
+  .shorten-box {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+a:hover,
+button:hover {
+  transition: all 0.25s ease-in-out;
+}
